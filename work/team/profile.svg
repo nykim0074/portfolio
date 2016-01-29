@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.3.2 (12041) - http://www.bohemiancoding.com/sketch -->
+    <title>Ng + Oval 2</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Choose-instructor" sketch:type="MSArtboardGroup" transform="translate(-514.000000, -173.000000)">
+            <g id="Ng-+-Oval-2" sketch:type="MSLayerGroup" transform="translate(514.503415, 172.000000)">
+                <g id="Oval-64-+-Oval-65-+-Path-65" transform="translate(0.000000, 1.135135)" sketch:type="MSShapeGroup">
+                    <circle id="Oval-64" fill="#9E9E9E" cx="20.4324324" cy="20.4324324" r="20.4324324"></circle>
+                    <circle id="Oval-65" fill="#EEEEEE" cx="20.4324324" cy="14.7567568" r="5.67567568"></circle>
+                    <path d="M20.1532981,21.0874929 C29.567762,21.0874929 31.2704469,31.3109847 31.2704469,31.3109847 L9.59441792,31.3109847 C9.59441792,31.3109847 10.7388341,21.0874929 20.1532981,21.0874929 Z" id="Path-65" fill="#EEEEEE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

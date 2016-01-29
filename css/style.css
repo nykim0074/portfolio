@@ -26,6 +26,11 @@ header {
     font-family: "Lato", Helvetica, Helvetica Neue, Arial, sans-serif;
 }
 
+#LHeadline {
+  display:block;
+}
+
+
 a, a:visited
 {
 	padding-bottom: 1px;
@@ -37,10 +42,7 @@ a, a:visited
 a:hover {
 	color: rgba(49, 49, 48, .7);
 	border-bottom: 1px solid rgba(48, 48, 47, .7);
-}
-
-.clear {
-  clear: both;
+  text-decoration: none;
 }
 
 .centerAlign
@@ -76,6 +78,41 @@ h3
 	text-transform: uppercase;
 }
 
+h4
+{
+	font-family: "Lato", Helvetica, Helvetica Neue, Arial, sans-serif;
+	font-size: 1.15em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav li a {
+	color: rgba(51, 51, 50, 1);
+}
+
+.navPadding {
+  padding-top: 86px;
+}
+
+.identity {
+  position: absolute;
+  top: 50%;
+  height:30px;
+  margin-top: -16px;
+}
+
+.identity img {
+  margin-right: 15px;
+  margin-bottom: 6px;
+  height: 30px;
+}
+
 .date
 {
 	/* font-family: "ApercuBold", Helvetica, Helvetica Neue, Arial, sans-serif; */
@@ -87,6 +124,12 @@ img{
 	max-width: 100%;
 	height: auto;
   width: auto;
+}
+
+.eating img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .underlined
@@ -207,6 +250,13 @@ img{
 	width: 25%;
 }
 
+.col33
+{
+	display: block;
+	float: left;
+	width: 33.33%;
+}
+
 .col3
 {
 	display: block;
@@ -218,7 +268,7 @@ img{
 {
 	display: block;
 	float: left;
-	width: 50%;
+	width: 49.9%;
 }
 
 .col6
@@ -307,6 +357,40 @@ img{
   	box-shadow:         0px 0px 0px 0px rgba(255, 255, 255, .5);
 }
 
+/* Parallax */
+
+.parallax [class*="bg__"] {
+  position: relative;
+  height: 50vh;
+  text-indent: -9999px;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+.parallax [class*="bg__"]:nth-child(2n) {
+  box-shadow: inset 0 0 1em #111;
+}
+
+.parallax .bg__foo {
+  height: 95vh;
+  background-image: url(../img/lebanon.jpg);
+}
+
+.parallax .bg__conference {
+  height: 75vh;
+  background-image: url(../work/conference/conference.png);
+}
+
+.parallax .bg__map {
+  height: 75vh;
+  background-image: url(../img/workshop.png);
+}
+
+.parallax .bg__food {
+  height: 75vh;
+  background-image: url(../img/food.png);
+}
+
 
 
 /* Patterns */
@@ -317,7 +401,7 @@ img{
 	height: 17px;
 	margin: 0 auto 55px auto;
 	opacity: .86;
-	background: url("../images/patterns.png") no-repeat 0 0;
+	background: url("../img/patternsx2.png") no-repeat 0 0;
 }
 
 /* Graphics and Icons */
@@ -325,7 +409,7 @@ img{
 
 .iconMargins
 {
-	margin: 33px auto 0px auto
+	margin: 50px auto 25px auto
 }
 
 .labelMargins
@@ -378,28 +462,15 @@ img{
 
 #iconProfile
 {
-	width: 106px;
-	height: 106px;
-}
-
-#iconWorks
-{
-	width: 106px;
-	height: 106px;
-}
-
-
-#iconJournal
-{
-	width: 106px;
-	height: 106px;
+	width: 63px;
+	height: 63px;
 }
 
 .iconHover
 {
 	width: 18px;
 	height: 18px;
-	background: url('../img/hover.png') no-repeat 0 0;
+	background: url('../img/icon_hover.png') no-repeat 0 0;
 	margin: 10px auto;
 }
 
@@ -456,7 +527,6 @@ img{
   z-index: 100;
 }
 
-.main-logo a,
 .nav a{
   display: block;
   text-align: center;
@@ -465,10 +535,18 @@ img{
   border-bottom: none;
 }
 
+
+.identity a{
+  border-bottom: none;
+  text-transform: uppercase;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+}
+
 .nav {
   display: block;
-	height: 90px;
-	line-height: 90px;
+	height: 86px;
+	line-height: 86px;
   text-align: right;
   padding: 16px;
 }
@@ -521,6 +599,26 @@ img{
 }
 
 /* Grid post */
+.tasks {
+  /*background-color: white; */
+  padding: 25px 10px 5px 10px;
+}
+
+.tasks h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.tasks p {
+  font-size: .9em
+}
+
+.tasks img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .75em;
+}
 
 .thumbPost
 {
@@ -749,7 +847,7 @@ img{
 	}
 	.iconHover
 	{
-		background: url('../img/hover.png') no-repeat 0 0;
+    background: url('../img/../img/icon_hoverx2.png') no-repeat 0 0;
 		background-size: 18px 18px;
 	}
 
@@ -767,7 +865,7 @@ img{
 
 	.pattern
 	{
-		background: url("../images/patternsx2.png") no-repeat 0 0;
+		background: url("../img/patternsx2.png") no-repeat 0 0;
 		background-size: 82px 170px;
 	}
 }
@@ -788,6 +886,10 @@ img{
 	{
 		font-size: 23px;
 	}
+
+
+
+
 	.central{
 		max-width: 1336px;
 	}
@@ -806,8 +908,8 @@ img{
 
  .nav
 	{
-    height: 90px;
-    line-height: 90px;
+    height: 86px;
+    line-height: 86px;
 	}
 
 	.col1
@@ -821,6 +923,13 @@ img{
 	{
 		display: block;
 		float: left;
+		width: 80%;
+	}
+
+  .col33
+	{
+		display: block;
+		float: left;
 		width: 100%;
 	}
 
@@ -828,7 +937,7 @@ img{
 	{
 		display: block;
 		float: left;
-		width: 50%;
+		width: 49.9%;
 	}
 
 
@@ -837,6 +946,10 @@ img{
 		margin: 24% auto;
 	}
 
+}
+
+.navbar-nav>li>a {
+  padding-top: 18px;
 }
 
 
@@ -866,10 +979,6 @@ img{
     z-index: 100;
 	}
 
-  .navbar {
-    background: white;
-  }
-
   .navbar-default .navbar-toggle .icon-bar {
     background-color: rgba(51, 51, 50);
   }
@@ -893,7 +1002,7 @@ img{
   }
 
   .navbar-nav li a{
-    line-height: 32px;
+    line-height: 40px;
   }
 
   .navbar ul {
@@ -907,15 +1016,31 @@ img{
     padding: 10px;
   }
 
+  .navPadding {
+    padding-top: 50px;
+  }
+
 	.leftSpacer
 	{
 		padding-left: 24px;
 		padding-right: 12px;
 	}
 
+  .identity {
+    margin-left: 30px;
+  }
+
+  .identity span {
+    display: none;
+  }
+
+  .parallax {
+    display: none;
+  }
+
 	.iconMargins
 	{
-		margin: 15px auto 0px auto
+		margin: 35px auto 15px auto
 	}
 
 	.labelMargins
@@ -956,6 +1081,8 @@ img{
 		width: 100%;
 	}
 
+
+
 	.col4
 	{
 		display: block;
@@ -989,6 +1116,7 @@ img{
 
 	.endingModuleGutter
 	{
+    /*padding-top: 60px;*/
 		padding-bottom: 42px;
 	}
 
@@ -1006,11 +1134,11 @@ img{
 		margin:12px auto;
 	}
 
-	#iconProfile, #iconWorks, #iconJournal, #iconTwitter, #iconAwards, .iconContact
+	#iconProfile, #iconTwitter, #iconAwards, .iconContact
 	{
-		width: 73px;
-		height: 73px;
-		background-size: 73px 73px;
+		width: 63px;
+		height: 63px;
+		background-size: 63px 63px;
 	}
 
 	#twitter
