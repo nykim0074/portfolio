@@ -391,6 +391,11 @@ img{
   background-image: url(../img/food.png);
 }
 
+.parallax .bg__authoring {
+  height: 75vh;
+  background-image: url(../img/content.png);
+}
+
 
 
 /* Patterns */
